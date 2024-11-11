@@ -1,6 +1,7 @@
 {
   "name": "mathml_converter",
   "version": "0.1.0",
+  "homepage": "https://gitosix.github.io/mathml-converter",
   "private": true,
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9",
