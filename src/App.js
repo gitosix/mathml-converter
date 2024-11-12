@@ -57,6 +57,10 @@ while (result.search(/SqrtBox\[/g) >-1) {
     result = result.replace(/\\\:2264/g, 'LEQ');
     result = result.replace(/\\\:2265/g, 'GEQ');
 
+    // 괄호 처리
+    result = result.replace(/\(/g, ' LEFT ( ');
+    result = result.replace(/\)/g, ' RIGHT ) ');
+
     // RowBox 처리
     result = result
       .replace(/RowBox\[\{/g, '')
