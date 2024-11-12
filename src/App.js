@@ -85,7 +85,7 @@ while (result.search(/SqrtBox\[/g) >-1) {
     <div className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold text-gray-800 mb-8">Wolfram 출력값 변환기</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
+        <div className="space-y-4">
           <label className="block text-sm font-medium text-gray-700">
             Wolfram 출력값 입력
           </label>
@@ -103,7 +103,7 @@ while (result.search(/SqrtBox\[/g) >-1) {
             placeholder="여기에 Wolfram 출력값을 붙여넣으세요..."
           />
         </div>
-        <div className="space-y-2">
+        <div className="space-y-4">
           <div className="flex justify-between items-center">
             <label className="block text-sm font-medium text-gray-700">
               변환 결과
@@ -137,6 +137,9 @@ while (result.search(/SqrtBox\[/g) >-1) {
       >
         변환하기
       </button>
+      <div className="mt-4 text-sm text-gray-500 space-y-1">
+        <p>※ 사용 가능한 식: 다항식, 유리식, 무리식, 지수식 (계속 업데이트할 예정입니다.!)</p>
+      </div>
     </div>
   );
 };
